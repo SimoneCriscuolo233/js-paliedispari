@@ -1,4 +1,5 @@
 //Palindroma
+
 //definizione variabile per inserimento di una parola da parte dell'utente
 const userWord = prompt(`Inserisci una parola`);
 //creazione di una funzione che verifica se la parola inserita è palindroma
@@ -21,7 +22,9 @@ if (result) {
   console.log(`La parola "${userWord}" non è palindroma.`);
 }
 
+
 //Pari o DIspari
+
 //dichiarazione di una variabile per la somma dei due numeri\
 let sum = 0;
 //l'utente sceglie pari  o dispari
@@ -49,4 +52,13 @@ function isEven(number) {
 }
 //creazione di una variabile che invoca e contiene il risultato della funzione
 const numResult = isEven(sum);
-
+//creazione di un controllo che mostra il risultato in console
+if (numResult && userChoice.toLowerCase() === 'pari') {
+  console.log(`Hai vinto. La somma del tuo numero ${userNumber} e il numero random ${randomNumber} e' pari. ${sum}`);
+} else if (numResult === false && userChoice.toLowerCase() === 'dispari') {
+  console.log(`Hai  perso. La somma del tuo numero ${userNumber} e il numero random ${randomNumber} e' dispari. ${sum}`);
+} else if (numResult === false && userChoice.toLowerCase() === 'dispari') {
+  console.log(`Hai vinto. La somma del tuo numero ${userNumber} e il numero random ${randomNumber} e' dispari. ${sum}`);
+} else {
+  console.log(`Hai perso. La somma del tuo numero ${userNumber} e il numero random ${randomNumber} e' pari. ${sum}`);
+}
