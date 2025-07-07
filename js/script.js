@@ -34,4 +34,19 @@ function getRandomNumber() {
   const randomNumber = Math.floor(Math.random() * 5) + 1;
   return randomNumber;
 }
-getRandomNumber();
+//creazione di una variabile che invoca e contiene il numero random
+const randomNumber = getRandomNumber();
+//creazione di una funzione che verifica se la somma dei numeri e' pari o dispari
+function isEven(number) {
+  //creazione di una variabile che contiene il risultato della somma dei due numeri
+  sum = userNumber + randomNumber;
+  //verifica se la somma è pari o dispari
+  if (sum % 2 === 0) {
+    return true; //pari
+  } else {
+    return false; //dispari
+  }
+}
+//creazione di una variabile che invoca e contiene il risultato della funzione
+const numResult = isEven(sum);
+
