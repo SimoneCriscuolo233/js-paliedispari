@@ -21,4 +21,17 @@ if (result) {
   console.log(`La parola "${userWord}" non è palindroma.`);
 }
 
-
+//Pari o DIspari
+//dichiarazione di una variabile per la somma dei due numeri\
+let sum = 0;
+//l'utente sceglie pari  o dispari
+const userChoice = prompt(`Scegli pari o dispari (scrivi "pari" o "dispari")`);
+//definizione variabile per inserimento di un numero da parte dell'utente
+const userNumber = parseInt(prompt(`Inserisci un numero da 1 a 5`));
+//creazione di una funzione che crea un numero random da 1 a 5
+function getRandomNumber() {
+  //creazione di una variabile che contiene un numero random da 1 a 5
+  const randomNumber = Math.floor(Math.random() * 5) + 1;
+  return randomNumber;
+}
+getRandomNumber();
