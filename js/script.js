@@ -12,6 +12,13 @@ function isPalindrome(word) {
     return false;
   }
 }
-
+//creazione di una variabile che invoca e contiene il risultato della funzione
+const result = isPalindrome(userWord);
+//creazione di un controllo che mostra il risultato in console
+if (result) {
+  console.log(`La parola "${userWord}" è palindroma.`);
+} else {
+  console.log(`La parola "${userWord}" non è palindroma.`);
+}
 
 
